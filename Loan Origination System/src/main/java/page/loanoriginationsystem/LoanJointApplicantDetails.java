@@ -9,39 +9,39 @@ public class LoanJointApplicantDetails implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Customer No")
+   @org.kie.api.definition.type.Label("Customer No")
    private java.math.BigInteger jointApplicantCustomerNo;
-   @org.kie.api.definition.type.Label(value = "Customer Name")
+   @org.kie.api.definition.type.Label("Customer Name")
    private java.lang.String jointApplicantName;
-   @org.kie.api.definition.type.Label(value = "Date of Birth")
+   @org.kie.api.definition.type.Label("Date of Birth")
    private java.util.Date jointApplicantDOB;
-   @org.kie.api.definition.type.Label(value = "Mobile Number")
+   @org.kie.api.definition.type.Label("Mobile Number")
    private java.lang.Long jointApplicantMobileNo;
-   @org.kie.api.definition.type.Label(value = "Email Address")
+   @org.kie.api.definition.type.Label("Email Address")
    private java.lang.String jointApplicantEmailAddress;
-   @org.kie.api.definition.type.Label(value = "Residence Telephone No")
+   @org.kie.api.definition.type.Label("Residence Telephone No")
    private java.lang.Long jointApplicantResidenceTelephoneNo;
-   @org.kie.api.definition.type.Label(value = "Monthly Salary/Income")
+   @org.kie.api.definition.type.Label("Monthly Salary/Income")
    private java.lang.Double jointApplicantMonthlyIncome;
-   @org.kie.api.definition.type.Label(value = "Mother Maiden Name")
+   @org.kie.api.definition.type.Label("Mother Maiden Name")
    private java.lang.String jointApplicantMotherMaidenName;
-   @org.kie.api.definition.type.Label(value = "Gender")
-   private java.lang.Short jointApplicantGender;
-   @org.kie.api.definition.type.Label(value = "Passport No")
+   @org.kie.api.definition.type.Label("Gender")
+   private String jointApplicantGender;
+   @org.kie.api.definition.type.Label("Passport No")
    private java.lang.String jointApplicantPassportNo;
-   @org.kie.api.definition.type.Label(value = "National ID No")
+   @org.kie.api.definition.type.Label("National ID No")
    private java.lang.String jointApplicantNationalIDNo;
-   @org.kie.api.definition.type.Label(value = "Occupation")
+   @org.kie.api.definition.type.Label("Occupation")
    private java.lang.String jointApplicantOccupation;
-   @org.kie.api.definition.type.Label(value = "Company Name")
+   @org.kie.api.definition.type.Label("Company Name")
    private java.lang.String jointApplicantCompanyName;
-   @org.kie.api.definition.type.Label(value = "Office Telephone Number")
+   @org.kie.api.definition.type.Label("Office Telephone Number")
    private java.lang.Long jointApplicantOfficeTelephoneNo;
-   @org.kie.api.definition.type.Label(value = "Designation")
+   @org.kie.api.definition.type.Label("Designation")
    private java.lang.String jointApplicantDesignation;
-   @org.kie.api.definition.type.Label(value = "Employed/Years in Business Since")
+   @org.kie.api.definition.type.Label("Employed/Years in Business Since")
    private java.lang.Integer jointApplicantWorkExp;
-   @org.kie.api.definition.type.Label(value = "Relationship with Applicant 1")
+   @org.kie.api.definition.type.Label("Relationship with Applicant 1")
    private java.lang.String jointApplicantRelationWithApplicant;
 
    public LoanJointApplicantDetails()
@@ -133,16 +133,6 @@ public class LoanJointApplicantDetails implements java.io.Serializable
       this.jointApplicantMotherMaidenName = jointApplicantMotherMaidenName;
    }
 
-   public java.lang.Short getJointApplicantGender()
-   {
-      return this.jointApplicantGender;
-   }
-
-   public void setJointApplicantGender(java.lang.Short jointApplicantGender)
-   {
-      this.jointApplicantGender = jointApplicantGender;
-   }
-
    public java.lang.String getJointApplicantPassportNo()
    {
       return this.jointApplicantPassportNo;
@@ -230,16 +220,24 @@ public class LoanJointApplicantDetails implements java.io.Serializable
       this.jointApplicantRelationWithApplicant = jointApplicantRelationWithApplicant;
    }
 
-   public LoanJointApplicantDetails(
-         java.math.BigInteger jointApplicantCustomerNo,
-         java.lang.String jointApplicantName,
-         java.util.Date jointApplicantDOB,
+   public java.lang.String getJointApplicantGender()
+   {
+      return this.jointApplicantGender;
+   }
+
+   public void setJointApplicantGender(java.lang.String jointApplicantGender)
+   {
+      this.jointApplicantGender = jointApplicantGender;
+   }
+
+   public LoanJointApplicantDetails(java.math.BigInteger jointApplicantCustomerNo,
+         java.lang.String jointApplicantName, java.util.Date jointApplicantDOB,
          java.lang.Long jointApplicantMobileNo,
          java.lang.String jointApplicantEmailAddress,
          java.lang.Long jointApplicantResidenceTelephoneNo,
          java.lang.Double jointApplicantMonthlyIncome,
          java.lang.String jointApplicantMotherMaidenName,
-         java.lang.Short jointApplicantGender,
+         java.lang.String jointApplicantGender,
          java.lang.String jointApplicantPassportNo,
          java.lang.String jointApplicantNationalIDNo,
          java.lang.String jointApplicantOccupation,
