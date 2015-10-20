@@ -11,7 +11,7 @@ public class BankUsageDetails implements java.io.Serializable
 
    @org.kie.api.definition.type.Label("Source Channels")
    @org.kie.api.definition.type.Position(1)
-   private java.lang.Short bankSourceChannels;
+   private String bankSourceChannels;
    @org.kie.api.definition.type.Label("Source Channel Area")
    @org.kie.api.definition.type.Position(4)
    private java.lang.String bankSourceChannelArea;
@@ -82,17 +82,17 @@ public class BankUsageDetails implements java.io.Serializable
       this.bankOtherComments = bankOtherComments;
    }
 
-   public java.lang.Short getBankSourceChannels()
+   public java.lang.String getBankSourceChannels()
    {
       return this.bankSourceChannels;
    }
 
-   public void setBankSourceChannels(java.lang.Short bankSourceChannels)
+   public void setBankSourceChannels(java.lang.String bankSourceChannels)
    {
       this.bankSourceChannels = bankSourceChannels;
    }
 
-   public BankUsageDetails(java.lang.Short bankSourceChannels,
+   public BankUsageDetails(java.lang.String bankSourceChannels,
          java.lang.String bankSourceChannelArea,
          java.lang.String bankSourcingStaffID,
          java.lang.String bankSourcingStaffName,
