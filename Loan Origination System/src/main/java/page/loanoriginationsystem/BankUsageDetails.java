@@ -9,31 +9,27 @@ public class BankUsageDetails implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Source Channels")
-   private java.lang.Short bakSourceChannels;
-   @org.kie.api.definition.type.Label(value = "Source Channel Area")
+   @org.kie.api.definition.type.Label("Source Channels")
+   @org.kie.api.definition.type.Position(1)
+   private java.lang.Short bankSourceChannels;
+   @org.kie.api.definition.type.Label("Source Channel Area")
+   @org.kie.api.definition.type.Position(4)
    private java.lang.String bankSourceChannelArea;
-   @org.kie.api.definition.type.Label(value = "Sourcing Staff ID")
+   @org.kie.api.definition.type.Label("Sourcing Staff ID")
+   @org.kie.api.definition.type.Position(5)
    private java.lang.String bankSourcingStaffID;
-   @org.kie.api.definition.type.Label(value = "Sourcing Staff Name")
+   @org.kie.api.definition.type.Label("Sourcing Staff Name")
+   @org.kie.api.definition.type.Position(6)
    private java.lang.String bankSourcingStaffName;
-   @org.kie.api.definition.type.Label(value = "Branch/Sales Comments")
+   @org.kie.api.definition.type.Label("Branch/Sales Comments")
+   @org.kie.api.definition.type.Position(3)
    private java.lang.String bankSalesComments;
-   @org.kie.api.definition.type.Label(value = "Other Comments")
+   @org.kie.api.definition.type.Label("Other Comments")
+   @org.kie.api.definition.type.Position(2)
    private java.lang.String bankOtherComments;
 
    public BankUsageDetails()
    {
-   }
-
-   public java.lang.Short getBakSourceChannels()
-   {
-      return this.bakSourceChannels;
-   }
-
-   public void setBakSourceChannels(java.lang.Short bakSourceChannels)
-   {
-      this.bakSourceChannels = bakSourceChannels;
    }
 
    public java.lang.String getBankSourceChannelArea()
@@ -86,14 +82,23 @@ public class BankUsageDetails implements java.io.Serializable
       this.bankOtherComments = bankOtherComments;
    }
 
-   public BankUsageDetails(java.lang.Short bakSourceChannels,
+   public java.lang.Short getBankSourceChannels()
+   {
+      return this.bankSourceChannels;
+   }
+
+   public void setBankSourceChannels(java.lang.Short bankSourceChannels)
+   {
+      this.bankSourceChannels = bankSourceChannels;
+   }
+
+   public BankUsageDetails(java.lang.Short bankSourceChannels,
          java.lang.String bankSourceChannelArea,
          java.lang.String bankSourcingStaffID,
          java.lang.String bankSourcingStaffName,
-         java.lang.String bankSalesComments,
-         java.lang.String bankOtherComments)
+         java.lang.String bankSalesComments, java.lang.String bankOtherComments)
    {
-      this.bakSourceChannels = bakSourceChannels;
+      this.bankSourceChannels = bankSourceChannels;
       this.bankSourceChannelArea = bankSourceChannelArea;
       this.bankSourcingStaffID = bankSourcingStaffID;
       this.bankSourcingStaffName = bankSourcingStaffName;
