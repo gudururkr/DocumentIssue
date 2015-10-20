@@ -9,8 +9,195 @@ public class VehicleCarDetails implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
+   @org.kie.api.definition.type.Label(value = "Car Model")
+   private java.lang.String vehicleCarModel;
+   @org.kie.api.definition.type.Label(value = "Car Make")
+   private java.lang.String vehicleCarMake;
+   @org.kie.api.definition.type.Label(value = "Year")
+   private java.lang.String vehicleYearOfModel;
+   @org.kie.api.definition.type.Label(value = "Car Type")
+   private java.lang.String vehicleCarType;
+   @org.kie.api.definition.type.Label(value = "Engine Size")
+   private java.lang.String vehicleCarEngineSize;
+   @org.kie.api.definition.type.Label(value = "Vehicle Chasis No")
+   private java.lang.String vehicleCarChasisNo;
+   @org.kie.api.definition.type.Label(value = "Current Milage /Km")
+   private java.lang.String vehicleCarCurrentMilage;
+   @org.kie.api.definition.type.Label(value = "Vehicle Supplier")
+   private java.lang.String vehicleCarSupplier;
+   @org.kie.api.definition.type.Label(value = "Dealer Location (Emirates)")
+   private java.lang.String vehicleDealerLocation;
+   @org.kie.api.definition.type.Label(value = "Vehicle Price")
+   private java.lang.Double vehicleCarPrice;
+   @org.kie.api.definition.type.Label(value = "Evaluation Price")
+   private java.lang.Double vehicleCarEvaluationPrice;
+   @org.kie.api.definition.type.Label(value = "Dealer / Car Evaluator\u2019s Name")
+   private java.lang.String vehicleCarEvaluatorsName;
+   @org.kie.api.definition.type.Label(value = "Insurance Company Name")
+   private java.lang.String vehicleCarInsuranceCompanyName;
+
    public VehicleCarDetails()
    {
+   }
+
+   public java.lang.String getVehicleCarModel()
+   {
+      return this.vehicleCarModel;
+   }
+
+   public void setVehicleCarModel(java.lang.String vehicleCarModel)
+   {
+      this.vehicleCarModel = vehicleCarModel;
+   }
+
+   public java.lang.String getVehicleCarMake()
+   {
+      return this.vehicleCarMake;
+   }
+
+   public void setVehicleCarMake(java.lang.String vehicleCarMake)
+   {
+      this.vehicleCarMake = vehicleCarMake;
+   }
+
+   public java.lang.String getVehicleYearOfModel()
+   {
+      return this.vehicleYearOfModel;
+   }
+
+   public void setVehicleYearOfModel(java.lang.String vehicleYearOfModel)
+   {
+      this.vehicleYearOfModel = vehicleYearOfModel;
+   }
+
+   public java.lang.String getVehicleCarType()
+   {
+      return this.vehicleCarType;
+   }
+
+   public void setVehicleCarType(java.lang.String vehicleCarType)
+   {
+      this.vehicleCarType = vehicleCarType;
+   }
+
+   public java.lang.String getVehicleCarEngineSize()
+   {
+      return this.vehicleCarEngineSize;
+   }
+
+   public void setVehicleCarEngineSize(java.lang.String vehicleCarEngineSize)
+   {
+      this.vehicleCarEngineSize = vehicleCarEngineSize;
+   }
+
+   public java.lang.String getVehicleCarChasisNo()
+   {
+      return this.vehicleCarChasisNo;
+   }
+
+   public void setVehicleCarChasisNo(java.lang.String vehicleCarChasisNo)
+   {
+      this.vehicleCarChasisNo = vehicleCarChasisNo;
+   }
+
+   public java.lang.String getVehicleCarCurrentMilage()
+   {
+      return this.vehicleCarCurrentMilage;
+   }
+
+   public void setVehicleCarCurrentMilage(java.lang.String vehicleCarCurrentMilage)
+   {
+      this.vehicleCarCurrentMilage = vehicleCarCurrentMilage;
+   }
+
+   public java.lang.String getVehicleCarSupplier()
+   {
+      return this.vehicleCarSupplier;
+   }
+
+   public void setVehicleCarSupplier(java.lang.String vehicleCarSupplier)
+   {
+      this.vehicleCarSupplier = vehicleCarSupplier;
+   }
+
+   public java.lang.String getVehicleDealerLocation()
+   {
+      return this.vehicleDealerLocation;
+   }
+
+   public void setVehicleDealerLocation(java.lang.String vehicleDealerLocation)
+   {
+      this.vehicleDealerLocation = vehicleDealerLocation;
+   }
+
+   public java.lang.Double getVehicleCarPrice()
+   {
+      return this.vehicleCarPrice;
+   }
+
+   public void setVehicleCarPrice(java.lang.Double vehicleCarPrice)
+   {
+      this.vehicleCarPrice = vehicleCarPrice;
+   }
+
+   public java.lang.Double getVehicleCarEvaluationPrice()
+   {
+      return this.vehicleCarEvaluationPrice;
+   }
+
+   public void setVehicleCarEvaluationPrice(
+         java.lang.Double vehicleCarEvaluationPrice)
+   {
+      this.vehicleCarEvaluationPrice = vehicleCarEvaluationPrice;
+   }
+
+   public java.lang.String getVehicleCarEvaluatorsName()
+   {
+      return this.vehicleCarEvaluatorsName;
+   }
+
+   public void setVehicleCarEvaluatorsName(
+         java.lang.String vehicleCarEvaluatorsName)
+   {
+      this.vehicleCarEvaluatorsName = vehicleCarEvaluatorsName;
+   }
+
+   public java.lang.String getVehicleCarInsuranceCompanyName()
+   {
+      return this.vehicleCarInsuranceCompanyName;
+   }
+
+   public void setVehicleCarInsuranceCompanyName(
+         java.lang.String vehicleCarInsuranceCompanyName)
+   {
+      this.vehicleCarInsuranceCompanyName = vehicleCarInsuranceCompanyName;
+   }
+
+   public VehicleCarDetails(java.lang.String vehicleCarModel,
+         java.lang.String vehicleCarMake, java.lang.String vehicleYearOfModel,
+         java.lang.String vehicleCarType, java.lang.String vehicleCarEngineSize,
+         java.lang.String vehicleCarChasisNo,
+         java.lang.String vehicleCarCurrentMilage,
+         java.lang.String vehicleCarSupplier,
+         java.lang.String vehicleDealerLocation,
+         java.lang.Double vehicleCarPrice,
+         java.lang.Double vehicleCarEvaluationPrice,
+         java.lang.String vehicleCarEvaluatorsName,
+         java.lang.String vehicleCarInsuranceCompanyName)
+   {
+      this.vehicleCarModel = vehicleCarModel;
+      this.vehicleCarMake = vehicleCarMake;
+      this.vehicleYearOfModel = vehicleYearOfModel;
+      this.vehicleCarType = vehicleCarType;
+      this.vehicleCarEngineSize = vehicleCarEngineSize;
+      this.vehicleCarChasisNo = vehicleCarChasisNo;
+      this.vehicleCarCurrentMilage = vehicleCarCurrentMilage;
+      this.vehicleCarSupplier = vehicleCarSupplier;
+      this.vehicleDealerLocation = vehicleDealerLocation;
+      this.vehicleCarPrice = vehicleCarPrice;
+      this.vehicleCarEvaluationPrice = vehicleCarEvaluationPrice;
+      this.vehicleCarEvaluatorsName = vehicleCarEvaluatorsName;
+      this.vehicleCarInsuranceCompanyName = vehicleCarInsuranceCompanyName;
    }
 
 }
