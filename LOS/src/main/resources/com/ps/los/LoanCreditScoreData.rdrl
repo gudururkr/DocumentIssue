@@ -8,4 +8,10 @@ rule "LoanCreditScoreData"
 		CustomerDetails( gender == "Male" )
 		CustomerDetails( gender == "Female" )
 	then
+		CreditScoringData fact0 = new CreditScoringData();
+		fact0.setAge_creditScore( 10 );
+		insert( fact0 );
+		CreditScoringData fact1 = new CreditScoringData();
+		fact1.setAge_creditScore( 5 );
+		insert( fact1 );
 end
