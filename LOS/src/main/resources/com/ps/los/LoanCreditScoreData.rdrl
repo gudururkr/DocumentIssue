@@ -7,6 +7,7 @@ rule "LoanCreditScoreData"
 	when
 		CustomerDetails( gender == "Male" )
 		CustomerDetails( gender == "Female" )
+		CustomerDetails( gender == null )
 	then
 		CreditScoringData fact0 = new CreditScoringData();
 		fact0.setAge_creditScore( 10 );
@@ -14,4 +15,7 @@ rule "LoanCreditScoreData"
 		CreditScoringData fact1 = new CreditScoringData();
 		fact1.setAge_creditScore( 5 );
 		insert( fact1 );
+		CreditScoringData fact2 = new CreditScoringData();
+		fact2.setGender_creditScore( 0 );
+		insert( fact2 );
 end
