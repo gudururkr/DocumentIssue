@@ -6,11 +6,12 @@ rule "LoanCreditScoreData"
 	dialect "mvel"
 	ruleflow-group "LoanCreditScoring"
 	when
-		CustomerDetails( gender == "Male" , gender == "Female" , gender == null )
+		customerDetails : CustomerDetails( gender == "Male" , gender == "Female" , gender == null )
 	then
-		CreditScoringData fact0 = new CreditScoringData();
-		fact0.setAge_creditScore( 10 );
-		fact0.setAge_creditScore( 5 );
-		fact0.setAge_creditScore( 0 );
-		insertLogical( fact0 );
+		CreditScoringData creditScoringDetails = new CreditScoringData();
+		creditScoringDetails.setAge_creditScore( 10 );
+		creditScoringDetails.setAge_creditScore( 5 );
+		creditScoringDetails.setAge_creditScore( 0 );
+		insertLogical( creditScoringDetails );
+		System.out.println("----> "+creditScoringDetails.getAge_creditScore());
 end
