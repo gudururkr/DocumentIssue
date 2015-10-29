@@ -5,5 +5,13 @@ import java.lang.Number;
 rule "LoanOriginationScoreCard"
 	dialect "mvel"
 	when
+		CustomerDetails( gender == "male" )
+		CustomerDetails( gender == "female" )
 	then
+		CustomerDetails fact0 = new CustomerDetails();
+		fact0.setGender( "10" );
+		insert( fact0 );
+		CustomerDetails fact1 = new CustomerDetails();
+		fact1.setGender( "10" );
+		insert( fact1 );
 end
