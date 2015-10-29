@@ -8,10 +8,9 @@ rule "LoanCreditScoreData"
 	when
 		customerDetails : CustomerDetails( gender == "Male" , gender == "Female" , gender == null )
 	then
-		CreditScoringData creditScoringDetails = new CreditScoringData();
-		creditScoringDetails.setAge_creditScore( 10 );
-		creditScoringDetails.setAge_creditScore( 5 );
-		creditScoringDetails.setAge_creditScore( 0 );
-		insertLogical( creditScoringDetails );
-		System.out.println("----> "+creditScoringDetails.getAge_creditScore());
+		CreditScoringData fact0 = new CreditScoringData();
+		fact0.setAge_creditScore( 10 );
+		fact0.setAge_creditScore( 5 );
+		fact0.setAge_creditScore( 0 );
+		insert( fact0 );
 end
