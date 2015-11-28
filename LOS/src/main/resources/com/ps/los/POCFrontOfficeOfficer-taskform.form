@@ -142,6 +142,20 @@
 <property name="outputBinding" value="out_blackListDoc"/>
 <property name="fieldClass" value="org.jbpm.document.Document"/>
 </field>
+<field position="11" name="blacklistCheck" type="InputText" id="264626365">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Central Bank Blacklist Checkquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="rangeFormula" value="Central Bank Blacklist Check"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="in_blacklistCheck"/>
+<property name="outputBinding" value="out_blacklistCheck"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
 <field position="12" name="blacklistAmount" type="InputTextDouble" id="443086855">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="true"/>
@@ -165,18 +179,18 @@
 <property name="outputBinding" value="out_blacklistDescription"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="11" name="blacklistCheck" type="InputText" id="264626365">
-<property name="fieldRequired" value="false"/>
+<field position="14" name="technicalReports" type="InputText" id="1158579094">
+<property name="fieldRequired" value="true"/>
 <property name="groupWithPrevious" value="true"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Central Bank Blacklist Checkquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Technical Reportsquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="rangeFormula" value="Central Bank Blacklist Check"/>
+<property name="rangeFormula" value="{1,project is not in the bank list  and completed;2,project is not in the bank list and project is under construction;3,project is not yet started  but in the bank list and builder be   taken as guarantor ;4,Project in the bank list}"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
-<property name="inputBinding" value="in_blacklistCheck"/>
-<property name="outputBinding" value="out_blacklistCheck"/>
+<property name="inputBinding" value="in_technicalReports"/>
+<property name="outputBinding" value="out_technicalReports"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 </form>
