@@ -136,7 +136,7 @@
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
 <property name="labelCSSStyle" value="font-weight:bold;font-size:18px;"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;font-weight:bold;font-size:18px;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Applicant Documentsquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Applicant Documentsquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
 <property name="cssStyle" value="width:700px;margin-left:0px;"/>
 <property name="fieldClass" value="Separator"/>
@@ -173,7 +173,7 @@
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
 <property name="labelCSSStyle" value="font-weight:bold;font-size:18px;"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;font-weight:bold;font-size:18px;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Deviation Reportsquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Deviation Reportsquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
 <property name="cssStyle" value="width:700px;margin-left:0px;"/>
 <property name="fieldClass" value="Separator"/>
@@ -235,11 +235,11 @@
 <field position="20" name="technicalReports" type="InputText" id="1158579094">
 <property name="fieldRequired" value="true"/>
 <property name="groupWithPrevious" value="true"/>
-<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Technical Reportsquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Technical Reportsquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="rangeFormula" value="{1,project is not in the bank list  and completed;2,project is not in the bank list and project is under construction;3,project is not yet started  but in the bank list and builder be   taken as guarantor ;4,Project in the bank list}"/>
+<property name="rangeFormula" value="{1,project is not in the bank list  and completed;2,project is not in the bank list and project is under construction;3,project is not yet started  but in the bank list and builder be   taken as guarantor ;4,project is new  and under construction;5,Project in the bank list}"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
 <property name="inputBinding" value="in_technicalReports"/>
@@ -257,6 +257,15 @@
 <property name="outputBinding" value="out_dscr"/>
 <property name="fieldClass" value="java.lang.Double"/>
 </field>
+<field position="22" name=":decorator_2" type="Separator" id="1448470801">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="labelCSSStyle" value="font-weight:bold;font-size:18px;margin-top:10px;"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Assign toquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="cssStyle" value="width:700px;margin-left:0px;"/>
+<property name="fieldClass" value="Separator"/>
+</field>
 <field position="23" name="processManager" type="InputText" id="889852469">
 <property name="fieldRequired" value="true"/>
 <property name="groupWithPrevious" value="false"/>
@@ -270,14 +279,5 @@
 <property name="inputBinding" value="in_processManager"/>
 <property name="outputBinding" value="out_processManager"/>
 <property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="22" name=":decorator_2" type="Separator" id="1448470801">
-<property name="fieldRequired" value="false"/>
-<property name="groupWithPrevious" value="false"/>
-<property name="labelCSSStyle" value="font-weight:bold;font-size:18px;margin-top:10px;"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;font-weight:bold;font-size:18px;margin-top:10px;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Assign toquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="false"/>
-<property name="cssStyle" value="width:700px;margin-left:0px;"/>
-<property name="fieldClass" value="Separator"/>
 </field>
 </form>
