@@ -122,9 +122,6 @@
 <property name="inputBinding" value="in_customerDetails/dateOfBirth"/>
 <property name="outputBinding" value="out_customerDetails/dateOfBirth"/>
 <property name="fieldClass" value="java.util.Date"/>
-<property name="onChangeScript" value="var birthday = document.getElementById(&apos;dateOfBirth&apos;).value;  var numbers = birthday .match(/\d+/g);   var now = new Date();      var past = new Date(numbers[2], numbers[0]-1, numbers[1]);      var nowYear = now.getFullYear();      var pastYear = past.getFullYear();      var age = nowYear - pastYear;  
-alert(age);
-document.getElementById(&apos;age&apos;).value = age; "/>
 </field>
 <field position="10" name="age" type="InputTextInteger" id="1658206872">
 <property name="fieldRequired" value="false"/>
