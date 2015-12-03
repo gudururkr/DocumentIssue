@@ -61,6 +61,9 @@ public class CustomerDetails implements java.io.Serializable
    @org.kie.api.definition.type.Position(17)
    private java.lang.String internalBlacklistCheck;
 
+   @org.kie.api.definition.type.Label(value = "Age")
+   private java.lang.Integer age;
+
    public CustomerDetails()
    {
    }
@@ -236,6 +239,49 @@ public class CustomerDetails implements java.io.Serializable
          java.lang.String internalBlacklistCheck)
    {
       this.internalBlacklistCheck = internalBlacklistCheck;
+   }
+
+   public java.lang.Integer getAge()
+   {
+      return this.age;
+   }
+
+   public void setAge(java.lang.Integer age)
+   {
+      this.age = age;
+   }
+
+   public CustomerDetails(java.lang.Long customerNumber,
+         java.lang.String customerName, java.lang.String passportNumber,
+         java.lang.String nationalIDNumber, java.lang.String nationality,
+         java.lang.String mobileNumber, java.lang.String emailAddress,
+         java.lang.Double monthlySalary, java.util.Date dateOfBirth,
+         java.lang.String motherMaidenName, java.lang.String gender,
+         java.lang.String residenceAddress,
+         java.lang.String residenceTelephoneNo,
+         java.lang.String homeCountryAddress,
+         java.lang.String homeCountryTelephoneNo,
+         java.lang.String centralBankBlacklistCheck,
+         java.lang.String internalBlacklistCheck, java.lang.Integer age)
+   {
+      this.customerNumber = customerNumber;
+      this.customerName = customerName;
+      this.passportNumber = passportNumber;
+      this.nationalIDNumber = nationalIDNumber;
+      this.nationality = nationality;
+      this.mobileNumber = mobileNumber;
+      this.emailAddress = emailAddress;
+      this.monthlySalary = monthlySalary;
+      this.dateOfBirth = dateOfBirth;
+      this.motherMaidenName = motherMaidenName;
+      this.gender = gender;
+      this.residenceAddress = residenceAddress;
+      this.residenceTelephoneNo = residenceTelephoneNo;
+      this.homeCountryAddress = homeCountryAddress;
+      this.homeCountryTelephoneNo = homeCountryTelephoneNo;
+      this.centralBankBlacklistCheck = centralBankBlacklistCheck;
+      this.internalBlacklistCheck = internalBlacklistCheck;
+      this.age = age;
    }
 
    public CustomerDetails(java.lang.Long customerNumber,
