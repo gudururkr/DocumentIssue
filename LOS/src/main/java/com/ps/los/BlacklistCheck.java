@@ -9,11 +9,11 @@ public class BlacklistCheck implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Blacklist Report")
+   @org.kie.api.definition.type.Label("Blacklist Report")
    private org.jbpm.document.Document blackListReportDocument;
-   @org.kie.api.definition.type.Label(value = "Central Bank Blackliist Check")
+   @org.kie.api.definition.type.Label("Central Bank Blackliist Check")
    private java.lang.String centralBankBlackliistCheck;
-   @org.kie.api.definition.type.Label(value = "Amount")
+   @org.kie.api.definition.type.Label("Amount")
    private java.lang.Double amount;
 
    public BlacklistCheck()
