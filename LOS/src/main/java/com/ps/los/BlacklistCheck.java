@@ -10,7 +10,7 @@ public class BlacklistCheck implements java.io.Serializable
    static final long serialVersionUID = 1L;
 
    @org.kie.api.definition.type.Label(value = "Blacklist Report")
-   private java.lang.Object blackListReportDocument;
+   private org.jbpm.document.service.impl.DocumentImpl blackListReportDocument;
    @org.kie.api.definition.type.Label(value = "Central Bank Blackliist Check")
    private java.lang.String centralBankBlackliistCheck;
    @org.kie.api.definition.type.Label(value = "Amount")
@@ -20,13 +20,13 @@ public class BlacklistCheck implements java.io.Serializable
    {
    }
 
-   public java.lang.Object getBlackListReportDocument()
+   public org.jbpm.document.service.impl.DocumentImpl getBlackListReportDocument()
    {
       return this.blackListReportDocument;
    }
 
    public void setBlackListReportDocument(
-         java.lang.Object blackListReportDocument)
+         org.jbpm.document.service.impl.DocumentImpl blackListReportDocument)
    {
       this.blackListReportDocument = blackListReportDocument;
    }
@@ -52,7 +52,7 @@ public class BlacklistCheck implements java.io.Serializable
       this.amount = amount;
    }
 
-   public BlacklistCheck(java.lang.Object blackListReportDocument,
+   public BlacklistCheck(org.jbpm.document.service.impl.DocumentImpl blackListReportDocument,
          java.lang.String centralBankBlackliistCheck, java.lang.Double amount)
    {
       this.blackListReportDocument = blackListReportDocument;
