@@ -9,12 +9,18 @@ public class DeviationBlacklistCheck implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Central Bank Blackliist Check")
+   @org.kie.api.definition.type.Label("Central Bank Blackliist Check")
    private java.lang.String centralBankBlackliistCheck;
-   @org.kie.api.definition.type.Label(value = "Amount")
+   @org.kie.api.definition.type.Label("Amount")
    private java.lang.Double amount;
-   @org.kie.api.definition.type.Label(value = "\t Blacklist Report")
+   @org.kie.api.definition.type.Label("\t Blacklist Report")
    private org.jbpm.document.Document blackListReportDocument;
+
+   @org.kie.api.definition.type.Label(value = "Status")
+   private java.lang.String status;
+
+   @org.kie.api.definition.type.Label(value = "Description")
+   private java.lang.String description;
 
    public DeviationBlacklistCheck()
    {
@@ -52,12 +58,36 @@ public class DeviationBlacklistCheck implements java.io.Serializable
       this.blackListReportDocument = blackListReportDocument;
    }
 
+   public java.lang.String getStatus()
+   {
+      return this.status;
+   }
+
+   public void setStatus(java.lang.String status)
+   {
+      this.status = status;
+   }
+
+   public java.lang.String getDescription()
+   {
+      return this.description;
+   }
+
+   public void setDescription(java.lang.String description)
+   {
+      this.description = description;
+   }
+
    public DeviationBlacklistCheck(java.lang.String centralBankBlackliistCheck,
-         java.lang.Double amount, org.jbpm.document.Document blackListReportDocument)
+         java.lang.Double amount,
+         org.jbpm.document.Document blackListReportDocument,
+         java.lang.String status, java.lang.String description)
    {
       this.centralBankBlackliistCheck = centralBankBlackliistCheck;
       this.amount = amount;
       this.blackListReportDocument = blackListReportDocument;
+      this.status = status;
+      this.description = description;
    }
 
 }
