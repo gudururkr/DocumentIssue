@@ -14,7 +14,7 @@ public class DeviationBlacklistCheck implements java.io.Serializable
    @org.kie.api.definition.type.Label("Amount")
    private java.lang.Double amount;
    @org.kie.api.definition.type.Label("\t Blacklist Report")
-   private org.jbpm.document.Document blackListReportDocument;
+   private org.jbpm.document.service.impl.DocumentImpl blackListReportDocument;
 
    @org.kie.api.definition.type.Label(value = "Status")
    private java.lang.String status;
@@ -47,13 +47,13 @@ public class DeviationBlacklistCheck implements java.io.Serializable
       this.amount = amount;
    }
 
-   public org.jbpm.document.Document getBlackListReportDocument()
+   public org.jbpm.document.service.impl.DocumentImpl getBlackListReportDocument()
    {
       return this.blackListReportDocument;
    }
 
    public void setBlackListReportDocument(
-         org.jbpm.document.Document blackListReportDocument)
+         org.jbpm.document.service.impl.DocumentImpl blackListReportDocument)
    {
       this.blackListReportDocument = blackListReportDocument;
    }
@@ -80,7 +80,7 @@ public class DeviationBlacklistCheck implements java.io.Serializable
 
    public DeviationBlacklistCheck(java.lang.String centralBankBlackliistCheck,
          java.lang.Double amount,
-         org.jbpm.document.Document blackListReportDocument,
+         org.jbpm.document.service.impl.DocumentImpl blackListReportDocument,
          java.lang.String status, java.lang.String description)
    {
       this.centralBankBlackliistCheck = centralBankBlackliistCheck;
