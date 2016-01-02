@@ -9,8 +9,14 @@ public class AddBlacklistCheck implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Add Blacklist Check")
+   @org.kie.api.definition.type.Label("Add Blacklist Check")
    private java.util.List<com.ps.los.BlacklistCheck> addBlacklistCheck;
+
+   @org.kie.api.definition.type.Label(value = "Amount")
+   private java.lang.Double amount;
+
+   @org.kie.api.definition.type.Label(value = "Blacklist Type")
+   private java.lang.String blacklistType;
 
    public AddBlacklistCheck()
    {
@@ -27,10 +33,33 @@ public class AddBlacklistCheck implements java.io.Serializable
       this.addBlacklistCheck = addBlacklistCheck;
    }
 
+   public java.lang.Double getAmount()
+   {
+      return this.amount;
+   }
+
+   public void setAmount(java.lang.Double amount)
+   {
+      this.amount = amount;
+   }
+
+   public java.lang.String getBlacklistType()
+   {
+      return this.blacklistType;
+   }
+
+   public void setBlacklistType(java.lang.String blacklistType)
+   {
+      this.blacklistType = blacklistType;
+   }
+
    public AddBlacklistCheck(
-         java.util.List<com.ps.los.BlacklistCheck> addBlacklistCheck)
+         java.util.List<com.ps.los.BlacklistCheck> addBlacklistCheck,
+         java.lang.Double amount, java.lang.String blacklistType)
    {
       this.addBlacklistCheck = addBlacklistCheck;
+      this.amount = amount;
+      this.blacklistType = blacklistType;
    }
 
 }
